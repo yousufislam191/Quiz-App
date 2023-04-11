@@ -1,6 +1,8 @@
 .area{
-    width: auto;
-    border: 1px solid salmon;
+    text-align: center;
+    background-color: aliceblue;
+    height: 100vh;
+    padding: 3rem;
 }
 .h1Text {
     font-family: "Arial Black", sans-serif;

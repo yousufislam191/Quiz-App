@@ -2,17 +2,17 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
 
-import "../style/NotFound.css";
+import style from "../style/NotFound.module.css";
 
 const NotFound = () => {
   const navigate = useNavigate();
   return (
-    <>
-      <h1 className="h1Text">OPPS!</h1>
+    <div className={style.area}>
+      <h1 className={style.h1Text}>OPPS!</h1>
       <h1>
         <strong>404 </strong>- PAGE NOT FOUND
       </h1>
-      <h3 className="paragraph">
+      <h3 className={style.paragraph}>
         The page you are looking for might have been removed had its name
         changed or is temporarily unavailable.
       </h3>
@@ -26,7 +26,7 @@ const NotFound = () => {
       >
         Go to home page
       </Button>
-    </>
+    </div>
   );
 };
 
