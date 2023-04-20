@@ -11,10 +11,10 @@ const Quiz = () => {
         <Question />
         <Box />
         <div className="text-center d-flex justify-content-between">
-          <Button variant="outlined" color="warning" className="mt-3">
+          <Button variant="outlined" color="primary" className="mt-3">
             previous
           </Button>
-          <Button variant="outlined" color="success" className="mt-3">
+          <Button variant="outlined" color="secondary" className="mt-3">
             next
           </Button>
         </div>

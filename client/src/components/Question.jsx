@@ -9,7 +9,7 @@ import data from "../data/index.js";
 
 const Question = () => {
   const [value, setValue] = useState("");
-  const question = data[0];
+  const question = data[1];
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -21,9 +21,9 @@ const Question = () => {
   }, []);
 
   return (
-    <>
+    <div key={question.id}>
       <Typography variant="h5">{question.question}</Typography>
-      <RadioGroup key={question.id} value={value} onChange={handleChange}>
+      <RadioGroup value={value} onChange={handleChange}>
         {question.options.map((option, index) => (
           <FormControlLabel
             key={index}
@@ -33,7 +33,7 @@ const Question = () => {
           />
         ))}
       </RadioGroup>
-    </>
+    </div>
   );
 };
 
